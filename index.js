@@ -5,6 +5,7 @@ const navbar = document.getElementById('navbar');
 const otherNavbar = document.querySelector(".navbar")
 let myDiv = document.getElementById('my-div');
 let myParagraph = document.createElement('p')
+let mySquare = document.getElementById('my-square');
 
 console.log(myHtml);
 
@@ -29,3 +30,9 @@ navbar.prepend(myParagraph);
 myDiv.appendChild(myH1[0]);
 myDiv.appendChild(myH1[1]);
 myDiv.appendChild(myH1[2]);
+
+console.log(mySquare.style.backgroundColor)
+
+mySquare.addEventListener("click", () => {
+    mySquare.style.backgroundColor = "red";
+})
